@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT SANJAYA INSAN INTEGRA | Konsultan SDM &amp; Pusat Karir Nusantara</title>
+  <meta name="description" content="PT SANJAYA INSAN INTEGRA (Pusat Karir Nusantara) - Mitra penyediaan tenaga kerja profesional, rekrutmen, dan konsultasi manajemen bisnis berlegalitas resmi di Jakarta Timur." />
+  <style>
+    :root {
+      --primary: #0f294a;
+      --secondary: #1d4ed8;
+      --accent: #0ea5e9;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, #173f73 100%);
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    }
+    .nav-wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .brand h1 { font-size: 1.15rem; letter-spacing: 0.5px; }
+    .brand span { font-size: 0.8rem; color: #bae6fd; display: block; }
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin-left: 1.1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    nav a:hover { color: #fff; }
+    .hero {
+      background: linear-gradient(160deg, var(--primary) 0%, #1e40af 100%);
+      color: #fff;
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .hero-inner { max-width: 820px; margin: 0 auto; }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.28);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero h2 { font-size: 2rem; margin-bottom: 1rem; line-height: 1.25; }
+    .hero p { color: #dbeafe; font-size: 1.05rem; margin-bottom: 1.75rem; }
+    .btn-group { display: flex; justify-content: center; gap: 0.85rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: transform 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: #22c55e; color: #fff; }
+    .btn-outline { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid #fff; }
+    section { max-width: 1080px; margin: 0 auto; padding: 3.5rem 1.5rem; }
+    .section-title { text-align: center; margin-bottom: 2.25rem; }
+    .section-title h3 { font-size: 1.6rem; color: var(--primary); margin-bottom: 0.4rem; }
+    .section-title p { color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(15, 41, 74, 0.04);
+    }
+    .card h4 { color: var(--primary); font-size: 1.1rem; margin-bottom: 0.6rem; }
+    .card p { color: var(--muted); font-size: 0.93rem; }
+    .kbli-tag {
+      display: inline-block;
+      margin-top: 0.85rem;
+      font-size: 0.78rem;
+      background: #eff6ff;
+      color: var(--secondary);
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .legal-box {
+      background: #fff;
+      border-left: 5px solid var(--secondary);
+      border-radius: 10px;
+      padding: 1.75rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .legal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .legal-item small { color: var(--muted); display: block; font-size: 0.8rem; }
+    .legal-item strong { color: var(--primary); font-size: 0.95rem; }
+    .job-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .job-meta { font-size: 0.85rem; color: var(--secondary); font-weight: 600; margin-bottom: 0.5rem; }
+    .btn-apply {
+      margin-top: 1.1rem;
+      text-align: center;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.65rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    footer {
+      background: var(--primary);
+      color: #cbd5e1;
+      padding: 2.5rem 1.5rem;
+      margin-top: 2rem;
+    }
+    .footer-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    footer h4 { color: #fff; margin-bottom: 0.6rem; }
+    footer p, footer a { font-size: 0.9rem; color: #cbd5e1; text-decoration: none; }
+    .copyright {
+      max-width: 1080px;
+      margin: 1.75rem auto 0;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+      font-size: 0.82rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <div class="brand">
+      <h1>PT SANJAYA INSAN INTEGRA</h1>
+      <span>Unit Operasional: Pusat Karir Nusantara</span>
+    </div>
+    <nav>
+      <a href="#layanan">Layanan</a>
+      <a href="#legalitas">Legalitas</a>
+      <a href="#karir">Lowongan Kerja</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="badge">Mitra Strategis SDM &amp; Konsultasi Manajemen</div>
+    <h2>Solusi Tenaga Kerja Profesional &amp; Pengembangan Karier Terpercaya</h2>
+    <p>PT SANJAYA INSAN INTEGRA melalui <strong>Pusat Karir Nusantara</strong> menjembatani kebutuhan sumber daya manusia unggul bagi perusahaan sekaligus membuka akses karier nyata bagi tenaga kerja Indonesia.</p>
+    <div class="btn-group">
+      <a class="btn btn-primary" href="https://wa.me/6282215583349?text=Halo%20PT%20Sanjaya%20Insan%20Integra,%20saya%20ingin%20berdiskusi%20mengenai%20kemitraan%20tenaga%20kerja." target="_blank">Hubungi Kemitraan (B2B)</a>
+      <a class="btn btn-outline" href="#karir">Lihat Lowongan Aktif</a>
+    </div>
+  </div>
+</div>
+
+<section id="layanan">
+  <div class="section-title">
+    <h3>Layanan Utama Kami</h3>
+    <p>Didukung standar operasional terukur dan legalitas usaha resmi pemerintah Republik Indonesia</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h4>Penyediaan &amp; Penempatan Tenaga Kerja</h4>
+      <p>Rekrutmen, penyaringan kandidat, pelatihan dasar, hingga penyaluran tenaga kerja siap pakai untuk sektor telekomunikasi, penjualan lapangan, dan operasional perusahaan.</p>
+      <span class="kbli-tag">KBLI 78200</span>
+    </div>
+    <div class="card">
+      <h4>Konsultasi Manajemen &amp; Bisnis</h4>
+      <p>Pendampingan strategi pengelolaan tim lapangan, akuisisi merchant, serta optimalisasi produktivitas SDM mitra usaha agar mencapai target pertumbuhan.</p>
+      <span class="kbli-tag">KBLI 70209</span>
+    </div>
+    <div class="card">
+      <h4>Penempatan Tenaga Kerja Dalam Negeri</h4>
+      <p>Penyaluran tenaga kerja terlatih dan terverifikasi untuk kebutuhan pemberi kerja domestik dan rumah tangga secara aman serta profesional.</p>
+      <span class="kbli-tag">KBLI 78103</span>
+    </div>
+  </div>
+</section>
+
+<section id="legalitas">
+  <div class="section-title">
+    <h3>Legalitas &amp; Identitas Badan Hukum</h3>
+    <p>Terdaftar resmi pada Kementerian Hukum &amp; Sistem Perizinan Berusaha Terintegrasi (OSS)</p>
+  </div>
+  <div class="legal-box">
+    <div class="legal-grid">
+      <div class="legal-item">
+        <small>Nama Badan Hukum</small>
+        <strong>PT SANJAYA INSAN INTEGRA</strong>
+      </div>
+      <div class="legal-item">
+        <small>SK Pengesahan Kemenkumham</small>
+        <strong>AHU-A139833.AH.01.30.Tahun 2026</strong>
+      </div>
+      <div class="legal-item">
+        <small>Nomor Induk Berusaha (NIB)</small>
+        <strong>1911260059252</strong>
+      </div>
+      <div class="legal-item">
+        <small>Domisili Operasional</small>
+        <strong>Cililitan, Kramat Jati, Jakarta Timur 13640</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="karir">
+  <div class="section-title">
+    <h3>Pusat Karir Nusantara — Lowongan Aktif</h3>
+    <p>Proses seleksi transparan dan gratis tanpa pungutan biaya apa pun</p>
+  </div>
+  <div class="grid">
+    <div class="card job-card">
+      <div>
+        <div class="job-meta">Jabodetabek • Full Time / Kemitraan</div>
+        <h4>Field Sales Executive / Account Executive (Telekomunikasi &amp; Fiber)</h4>
+        <p>Penempatan proyek mitra provider internet nasional (MyRepublic / Megavision). Terbuka bagi lulusan SMA/SMK sederajat yang komunikatif dan siap kerja lapangan.</p>
+      </div>
+      <a class="btn-apply" href="https://wa.me/6282215583349?text=Halo%20Pusat%20Karir%20Nusantara,%20saya%20ingin%20melamar%20posisi%20Field%20Sales%20Executive." target="_blank">Lamar via WhatsApp</a>
+    </div>
+    <div class="card job-card">
+      <div>
+        <div class="job-meta">Jakarta &amp; Bekasi • Freelance / Komisi</div>
+        <h4>Freelance Recruiter / Talent Acquisition Partner</h4>
+        <p>Bekerja fleksibel mencari dan mereferensikan kandidat potensial untuk proyek-proyek mitra PT Sanjaya Insan Integra dengan skema komisi menarik per kandidat lolos.</p>
+      </div>
+      <a class="btn-apply" href="https://wa.me/6282215583349?text=Halo%20Pusat%20Karir%20Nusantara,%20saya%20tertarik%20bergabung%20sebagai%20Freelance%20Recruiter." target="_blank">Daftar Mitra Recruiter</a>
+    </div>
+  </div>
+</section>
+
+<footer id="kontak">
+  <div class="footer-inner">
+    <div>
+      <h4>PT SANJAYA INSAN INTEGRA</h4>
+      <p>Pusat Karir Nusantara — Solusi Rekrutmen, Penyediaan Tenaga Kerja, dan Konsultasi Manajemen Bisnis.</p>
+    </div>
+    <div>
+      <h4>Kantor Operasional</h4>
+      <p>Jl. Olahraga I, Gg. Hj. Liman Dalam RT.005/RW.003, Kel. Cililitan, Kec. Kramat Jati, Kota Adm. Jakarta Timur 13640</p>
+    </div>
+    <div>
+      <h4>Hubungi Kami</h4>
+      <p>WhatsApp: <a href="https://wa.me/6282215583349">0822-1558-3349</a></p>
+      <p>Email: <a href="mailto:pusatkarirnusantara@gmail.com">pusatkarirnusantara@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2026 PT SANJAYA INSAN INTEGRA. Seluruh Hak Cipta Dilindungi Undang-Undang.
+  </div>
+</footer>
+
+</body>
+</html>
